@@ -61,7 +61,7 @@ def FNNLSa(XtX, Xty, tol=eps):
     
         while any(s[PP] <= tol) and it < itmax:
             it = it + 1
-            QQ = find_nonzero( (z <= tol) * P )
+            QQ = find_nonzero( (s <= tol) * P )
             alpha = min( x[QQ] / (x[QQ] - s[QQ]) ) 
             x     = x + alpha * (s - x)
             ij    = find_nonzero( (abs(x)<tol) * (P!=0) )
