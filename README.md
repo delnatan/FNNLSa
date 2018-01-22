@@ -5,7 +5,7 @@ Python port of FNNLSa algorithm by Rasmus Bro. Directly taken from his MATLAB fi
 
 This translation requires NumPy.
 
-Note that for FNNLS, the symmetric matrix $A^TA$ and matrix-vector product $A^T b$ is used as arguments, so `FNNLSs(AtA, Atb)`. The NNLS implementation from `scipy.optimize` uses `nnls(A,b)` instead. 
+Note that for FNNLS, the symmetric matrix $A^TA$ and matrix-vector product $A^T b$ is used as arguments, so `FNNLSa(AtA, Atb)`. The NNLS implementation from `scipy.optimize` uses `nnls(A,b)` instead. 
 
 
 ### Example
